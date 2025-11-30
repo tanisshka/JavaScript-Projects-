@@ -1,5 +1,5 @@
 ## 🚀 Live Project Links
-##Basic Projects
+##  Basic Projects
 | Project         | Live Demo | Source Code |
 |-----------------|-----------|-------------|
 | Color Flipper   | https://magnificent-gumdrop-cea76d.netlify.app/| [/01-Color-Flipper](./01-Color-Flipper) |
