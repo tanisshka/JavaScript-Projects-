@@ -1,0 +1,134 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0e0f11;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* GRID — 4 columns per row */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 95%;
+  max-width: 1300px;
+}
+
+/* Volume Control spans all columns */
+.volume-control {
+  grid-column: 1 / span 4;    /* TAKE FULL FIRST ROW */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+  padding: 18px 20px;
+  background: #181b20;
+  border-radius: 15px;
+  border: 1px solid #282b31;
+}
+
+.volume-control input {
+  width: 250px;
+  accent-color: #00eaff;
+}
+
+/* DRUM PAD BOX */
+.keys > div {
+  background: #141518;
+  padding: 30px 10px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid #23262d;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* allows us to swap colors dynamically */
+  --swap-color: #00eaff;
+}
+
+/* KBD BUTTON */
+.key {
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+/* UNIQUE COLORS */
+.A { background: #00eaff; color: black; }
+.S { background: #ff00e0; color: black; }
+.D { background: #ffe600; color: black; }
+.F { background: #51ff00; color: black; }
+.G { background: #ff7b00; color: black; }
+.H { background: #00ffbf; color: black; }
+.J { background: #b300ff; color: black; }
+.K { background: #ff0037; color: black; }
+
+/* TEXT UNDER KEY */
+.sound {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* SWAP COLORS ON HOVER */
+.keys > div:hover .key {
+  background: #141518;        /* key becomes dark */
+  color: white;
+  transform: scale(1.1);
+}
+
+.keys > div:hover {
+  background: var(--swap-color);  /* card takes neon color */
+  box-shadow: 0 0 25px var(--swap-color);
+  transform: scale(1.03);
+  border-color: var(--swap-color);
+}
+
+/* ACTIVE KEY (for JS class .playing) */
+.key.playing {
+  transform: scale(1.15);
+  box-shadow: 0 0 30px currentColor;
+}
+
+.keys > div.active .key {
+  transform: scale(1.1);       /* like hover */
+  color: white;                /* match hover text color */
+}
+
+.keys > div.active {
+  background: var(--swap-color);
+  box-shadow: 0 0 25px var(--swap-color);
+  transform: scale(1.03);
+  border-color: var(--swap-color);
+}
+

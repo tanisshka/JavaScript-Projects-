@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum-Kit</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Drum kit</h1>
+    </header>
+    <div class="keys">
+      <div class="volume-control">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+      </div>
+
+      <div>
+        <kbd data-key="A" class="A key">A</kbd>
+        <span class="sound">KicK</span>
+      </div>
+      <div>
+        <kbd data-key="S" class="S key">S</kbd>
+        <span class="sound">Snare</span>
+      </div>
+      <div>
+        <kbd data-key="D" class="D key">D</kbd>
+        <span class="sound">Close-Hi-Hat</span>
+      </div>
+      <div>
+        <kbd data-key="F" class="F key">F</kbd>
+        <span class="sound">Open-Hi-Hat</span>
+      </div>
+      <div>
+        <kbd data-key="G" class="G key">G</kbd>
+        <span class="sound">Low Tom</span>
+      </div>
+      <div>
+        <kbd data-key="H" class="H key">H</kbd>
+        <span class="sound">Hign Tom</span>
+      </div>
+      <div>
+        <kbd data-key="J" class="J key">J</kbd>
+        <span class="sound">Crash Cymbal</span>
+      </div>
+      <div>
+        <kbd data-key="K" class="K key">K</kbd>
+        <span class="sound">Ride Cymbal</span>
+      </div>
+    </div>
+    <audio data-key="A" src="./sounds/27h23c4jo59-kick-sfx-0.mp3"></audio>
+    <audio data-key="S" src="./sounds/w6wafpcpur-snare-drum-sfx-0.mp3"></audio>
+    <audio data-key="D" src="./sounds/closed-hi-hat-drum-426040.mp3"></audio>
+    <audio data-key="F" src="./sounds/open-hi-hat-431740.mp3"></audio>
+    <audio data-key="G" src="./sounds/low-floor-tom-level-2-106160.mp3"></audio>
+    <audio
+      data-key="H"
+      src="./sounds/high-tom-sample-with-sennheiser-e945-94341.mp3"
+    ></audio>
+    <audio data-key="J" src="./sounds/cymbal-crash-412547.mp3"></audio>
+    <audio data-key="K" src="./sounds/long-ride-cymbal-94674.mp3"></audio>
+    <footer class="footer">
+      © 2025 • Built with ❤️ by <strong>Tanishka Patil</strong>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
