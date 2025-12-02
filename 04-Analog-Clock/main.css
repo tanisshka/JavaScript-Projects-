@@ -1,0 +1,108 @@
+/* CLEAN WHITE BACKGROUND */
+body {
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* CLOCK TITLE */
+.title {
+    color: #333;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: "Stack Sans Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+}
+
+/* CLOCK CONTAINER */
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    max-width: 420px;
+    max-height: 420px;
+    background: url("assets/—Pngtree—clock\ no\ hand\ roman\ number_6940880.png") no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.15),
+        0 8px 25px rgba(0,0,0,0.1),
+        inset 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* CLOCK HANDS (BRIGHT + ELEGANT) */
+#hour, #minute, #second {
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* GOLDISH HOUR HAND */
+#hour {
+    width: 6px;
+    height: 25%;
+    background: #d4a017; /* gold */
+    top: 25%;
+}
+
+/* BLACK MINUTE HAND */
+#minute {
+    width: 4px;
+    height: 33%;
+    background: #222;
+    top: 17%;
+}
+
+/* RED THIN SECOND HAND */
+#second {
+    width: 2px;
+    height: 40%;
+    background: red;
+    top: 10%;
+}
+
+/* CENTER PIN (GOLD DOT) */
+#pin {
+    width: 16px;
+    height: 16px;
+    background: #d4a017; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    padding: 12px 0;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+}
+
+/* Small hover animation on the name */
+.footer strong {
+    color: #d4a017; /* gold */
+    transition: 0.3s ease;
+}
+
+.footer strong:hover {
+    color: #b3870f;
+    text-shadow: 0 0 8px rgba(212,160,23,0.5);
+}
