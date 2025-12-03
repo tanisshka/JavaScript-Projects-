@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&family=Stack+Sans+Headline:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./assets/bg1.png");
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 7vw;
+    margin: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading{
+    text-align: center;
+    font-family: "Stack Sans Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.gameContainer{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,8vw);
+    grid-template-columns: repeat(3,8vw);
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 5vw;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.boxtext{
+  /* font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; */
+    font-family: "Stack Sans Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(77, 74, 74);
+}
+
+.box:hover{
+    background-color: #f9dce1;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#button {
+ background-color: #eee;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10em;
+ border-radius: 1rem;
+ color: lightcoral;
+ box-shadow: 0 0.4rem #dfd9d9;
+ cursor: pointer;
+}
+
+#button:active {
+ color: white;
+ box-shadow: 0 0.2rem #dfd9d9;
+ transform: translateY(0.2rem);
+}
+
+#button:hover:not(:disabled) {
+ background: lightcoral;
+ color: white;
+ text-shadow: 0 0.1rem #bcb4b4;
+}
+
+#button:disabled {
+ cursor: auto;
+ color: grey;
+}
+
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+
+}
+
+.win-text {
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ff2d55;
+    text-shadow: 3px 3px 0px #000;
+    animation: pop 0.4s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.winning-box {
+    background-color: #ffb3c6 !important; /* soft pink */
+    animation: winner-pop 0.4s ease-in-out;
+}
+
+@keyframes winner-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.footer {
+  /* position: fixed; */
+  margin-top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0,0,0,0.08); 
+  font-family: "Poppins", sans-serif;
+}
