@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Joti+One&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:url("./asset/bg.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+/* HEADER */
+.header{
+    background-color:#432818;
+    margin:2% auto;
+    margin-top: 0;
+    width: 100%;
+    height: 4vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.heading{
+    color:white;
+    font-family:"Joti One", serif;
+    font-size:2rem;
+}
+
+/* QUIZ BOX */
+.quiz-container{
+    width:30vw;
+    min-height:30vw;
+    background:white;
+    margin:2% auto;
+    padding:2rem;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+/* QUESTION */
+.question-container{
+    font-size:1.2rem;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+/* ANSWER BUTTONS (this is what you wanted) */
+.answer-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width:100%;
+}
+
+.answer-buttons button{
+    width:100%;
+    padding:14px 18px;
+    background:#D8D0C7;          /* soft mint green */
+    border:none;
+    border-radius:28px;          /* pill shape */
+    text-align:left;             /* matches screenshot */
+    font-size:1rem;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.2s ease;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.15);
+    font:inherit
+}
+
+.answer-buttons button:hover{
+    background:#B58C7A;          /* slightly darker on hover */
+}
+
+/* CONTROLS */
+.control-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.button{
+    padding:10px 22px;
+    background:#432818;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:0.2s;
+}
+
+.button:hover{
+    background:#5a2c1f;
+}
+
+.hide{
+    display:none;
+}
+
+/* When the selected answer is correct */
+.correct {
+    background: #c8f7c8 !important;   /* light green */
+    border: 2px solid #38a169 !important; /* green border */
+    color: #1b5e20;
+}
+
+/* When the selected answer is wrong */
+.wrong {
+    background: #f7c8c8 !important;   /* light red */
+    border: 2px solid #e53935 !important; /* red border */
+    color: #7f0000;
+}
+
+/* A general selected state (optional) */
+.selected {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+#tracker{
+    text-align: center;
+}
+
+.play-again-btn {
+  padding: 12px 24px;
+  background: #432818;;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.play-again-btn:hover {
+  background: #B58C7A;
+  transform: scale(1.05);
+}
+
+.footer {
+  /* position: fixed; */
+  margin-top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0,0,0,0.08); 
+  font-family: "Poppins", sans-serif;
+}
