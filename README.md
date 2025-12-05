@@ -7,3 +7,4 @@
 | Analog Clock   | https://white-clock.netlify.app/ | [/04-Analog-Clock](./04-Analog-Clock) |
 | Tic-Tac-Toe   | https://xoxo-3.netlify.app/ | [/05-Tic-Tac-Toe](./05-Tic-Tac-Toe) |
 | Math Quiz App | https://math-speedrun.netlify.app/ | [/06-Quiz-App](./06-Quiz-App) |
+| Pig Game | https://roll-and-hold-dice.netlify.app/| [/07-Pig-Game](./07-Pig-Game) |
