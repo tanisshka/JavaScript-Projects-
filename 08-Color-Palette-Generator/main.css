@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #c8f3ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #1f3d5b;
+}
+
+#generateBtn {
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #1f3d5b;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    opacity: 0.8;
+}
+
+/* PALETTE GRID */
+.palette-container {
+    margin-top: 40px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* COLOR CARD */
+.color-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform .25s ease;
+}
+
+.color-card:hover {
+    transform: translateY(-6px);
+}
+
+.color-preview {
+    height: 120px;
+    width: 100%;
+}
+
+.color-info {
+    padding: 12px;
+    text-align: center;
+}
+
+.color-name {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.color-code {
+    color: #555;
+    font-weight: 600;
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    bottom: 40px;
+    background: #1f3d5b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #234a63;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+}
+.footer strong {
+  color: #0e3a5d;
+}
