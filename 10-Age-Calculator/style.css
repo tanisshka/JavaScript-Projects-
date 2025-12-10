@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("./assests/Untitled\ design.png") no-repeat center fixed;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+.title{
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: palevioletred;
+}
+
+/*--- MAIN LAYOUT: CARD LEFT + CALENDAR RIGHT ---*/
+.main-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   /* keeps them apart */
+    align-items: flex-start;
+    gap: 60px;                         /* spacing */
+    padding: 0 60px;
+}
+
+/*------------------ CARD (GLASS BOX LEFT) ------------------*/
+.card{
+    width: 380px;
+    padding: 30px;
+    border-radius: 22px;
+
+    /* Transparent Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.25);
+}
+
+.card button{
+    padding: 12px;
+    background: palevioletred;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.card button:hover{
+    background: white;
+    color: palevioletred;
+    border: 1px solid palevioletred;
+}
+
+#result{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/*------------------ CALENDAR GLASS BOX RIGHT ------------------*/
+.calendar{
+    width: 600px;
+    padding: 30px;
+    border-radius: 22px;
+
+    /* Transparent glass */
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* example grid – style yours like this */
+.card input[type="date"] {
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    color: #333;
+}
+
+/* Calendar icon styling */
+.card input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(45%) sepia(40%) saturate(400%) hue-rotate(300deg);
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
