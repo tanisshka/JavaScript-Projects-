@@ -2,7 +2,7 @@
 | Project         |  Source Code |
 |-----------------|--------------|
 | Color Flipper   | [/01-Color-Flipper](./01-Color-Flipper) |
-| Calculator UI   | [/02-Calculator](./02-Calculator) |
+| Calculator   | [/02-Calculator](./02-Calculator) |
 | Drum Kit   |  [/03-Drum-Kit](./03-Drum-Kit) |
 | Analog Clock   | [/04-Analog-Clock](./04-Analog-Clock) |
 | Tic-Tac-Toe   | [/05-Tic-Tac-Toe](./05-Tic-Tac-Toe) |
