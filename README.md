@@ -1,4 +1,4 @@
-## 🚀 Live Project Links
+## 🚀 Project Links
 | Project         |  Source Code |
 |-----------------|--------------|
 | Color Flipper   | [/01-Color-Flipper](./01-Color-Flipper) |
